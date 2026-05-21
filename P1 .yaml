@@ -1,0 +1,439 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+proxies:
+  - name: 🇹🇼_TW_中国台湾
+    type: vmess
+    server: v11.zgtfqs.click
+    port: 30811
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇻🇳_VN_越南
+    type: ss
+    server: 103.186.154.151
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_1
+    type: ss
+    server: 103.186.155.203
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯
+    type: ss
+    server: 45.139.25.43
+    port: 442
+    cipher: aes-128-gcm
+    password: 6784aee2-0dfe-474f-8446-480259ff9918
+    udp: true
+  - name: 🇳🇱_NL_荷兰
+    type: vless
+    server: 64.188.77.140
+    port: 8443
+    uuid: 072baf2f-574e-4939-8b20-ccd89c17fefb
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+      short-id: b3a1cc510a2001c6
+    udp: true
+  - name: 🇻🇳_VN_越南_2
+    type: ss
+    server: 103.186.154.149
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_3
+    type: ss
+    server: 103.186.154.43
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_4
+    type: ss
+    server: 103.186.154.242
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_5
+    type: ss
+    server: 103.186.155.234
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_6
+    type: ss
+    server: 103.186.155.41
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_7
+    type: ss
+    server: 103.186.154.70
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_8
+    type: ss
+    server: 103.186.154.229
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇻🇳_VN_越南_9
+    type: ss
+    server: 103.186.155.117
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇳🇱_NL_荷兰_1
+    type: vless
+    server: download.spectrum.vu
+    port: 443
+    uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+    servername: download.spectrum.vu
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
+      short-id: d1e9faa1b2c3
+    udp: true
+  - name: 🇭🇰_HK_中国香港
+    type: vmess
+    server: 47.243.135.74
+    port: 55185
+    uuid: 1375985e-334a-4c25-8f64-52a182bc8037
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Notif_Chat
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本_1
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇧🇷_BR_巴西
+    type: ss
+    server: 38.54.57.90
+    port: 989
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+    udp: true
+  - name: 🇻🇳_VN_越南_10
+    type: ss
+    server: 103.186.154.152
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: 154.21.91.91
+    port: 15623
+    uuid: 78dca3dc-8134-4e65-a08b-ba34ba228cdd
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x_BonebeDcNGX4eoog2P-p7_kzQhB0-OHJw5l1lbUCs
+      short-id: 3f
+    udp: true
+  - name: 🇻🇳_VN_越南_11
+    type: ss
+    server: 103.186.155.221
+    port: 38388
+    cipher: aes-256-cfb
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    udp: true
+proxy-groups:
+  - name: VPNHUB.UK
+    type: select
+    proxies:
+      - Ai Auto Select
+      - 🇭🇰HK1
+      - 🇭🇰HK2
+      - 🇭🇰HK3
+      - 🇭🇰HK4
+      - 🇭🇰HK5
+      - 🇭🇰HK6
+      - 🇭🇰HK7
+      - 🇭🇰HK8
+      - 🇭🇰HK9
+      - 🇺🇸US1
+      - 🇺🇸US2
+      - 🇺🇸US3
+      - 🇬🇧UK1
+      - 🇬🇧UK2
+      - 🇬🇧UK3
+      - 🇨🇳CN1
+      - 🇨🇳CN2
+      - 🇹🇼_TW_中国台湾
+      - 🇻🇳_VN_越南
+      - 🇻🇳_VN_越南_1
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯
+      - 🇳🇱_NL_荷兰
+      - 🇻🇳_VN_越南_2
+      - 🇻🇳_VN_越南_3
+      - 🇻🇳_VN_越南_4
+      - 🇻🇳_VN_越南_5
+      - 🇻🇳_VN_越南_6
+      - 🇻🇳_VN_越南_7
+      - 🇻🇳_VN_越南_8
+      - 🇻🇳_VN_越南_9
+      - 🇳🇱_NL_荷兰_1
+      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本_1
+      - 🇧🇷_BR_巴西
+      - 🇻🇳_VN_越南_10
+      - 🇺🇸_US_美国
+      - 🇻🇳_VN_越南_11
+  - name: Ai Auto Select
+    type: url-test
+    include-all: true
+    filter: (?i)(SG|JP|KR)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 10
+    proxies:
+      - DIRECT
+rules:
+  - IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve
+  - IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve
+  - DOMAIN-SUFFIX,services.googleapis.cn,VPNHUB.UK
+  - DOMAIN-KEYWORD,google,VPNHUB.UK
+  - DOMAIN-KEYWORD,gmail,VPNHUB.UK
+  - DOMAIN-KEYWORD,youtube,VPNHUB.UK
+  - DOMAIN-SUFFIX,youtu.be,VPNHUB.UK
+  - DOMAIN-SUFFIX,ytimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,gstatic.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,ggpht.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,gmodules.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,firebaseio.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,appspot.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,android.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,chromium.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,g.co,VPNHUB.UK
+  - DOMAIN-SUFFIX,goo.gl,VPNHUB.UK
+  - DOMAIN-KEYWORD,facebook,VPNHUB.UK
+  - DOMAIN-SUFFIX,fb.me,VPNHUB.UK
+  - DOMAIN-SUFFIX,fbcdn.net,VPNHUB.UK
+  - DOMAIN-KEYWORD,instagram,VPNHUB.UK
+  - DOMAIN-KEYWORD,whatsapp,VPNHUB.UK
+  - DOMAIN-KEYWORD,twitter,VPNHUB.UK
+  - DOMAIN-SUFFIX,twimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tweetdeck.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,yahoo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,yimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,telegram.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,telegra.ph,VPNHUB.UK
+  - IP-CIDR,91.108.4.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.8.0/21,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.16.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.56.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,149.154.160.0/20,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,VPNHUB.UK,no-resolve
+  - DOMAIN,developer.apple.com,DIRECT
+  - DOMAIN,ocsp.apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-dns.net,DIRECT
+  - DOMAIN,testflight.apple.com,DIRECT
+  - DOMAIN,sandbox.itunes.apple.com,DIRECT
+  - DOMAIN,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,apps.apple.com,DIRECT
+  - DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
+  - DOMAIN,cvws.icloud-content.com,DIRECT
+  - DOMAIN-KEYWORD,amazon,VPNHUB.UK
+  - DOMAIN-SUFFIX,awsstatic.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,live.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,live.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,hotmail.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,outlook.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,onedrive.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,onenote.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,windows.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,windows.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,msedge.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,azureedge.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,azurewebsites.net,VPNHUB.UK
+  - DOMAIN-KEYWORD,github,VPNHUB.UK
+  - DOMAIN-SUFFIX,git.io,VPNHUB.UK
+  - DOMAIN-SUFFIX,stackoverflow.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,docker.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,bitbucket.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,cocoapods.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,golang.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,angularjs.org,VPNHUB.UK
+  - DOMAIN-KEYWORD,dropbox,VPNHUB.UK
+  - DOMAIN-SUFFIX,box.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,box.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,mega.nz,VPNHUB.UK
+  - DOMAIN-SUFFIX,mega.co.nz,VPNHUB.UK
+  - DOMAIN-KEYWORD,blogspot,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogspot.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogspot.hk,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogger.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,pinterest.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,linkedin.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tumblr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tumblr.co,VPNHUB.UK
+  - DOMAIN-SUFFIX,spotify.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,soundcloud.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,sndcdn.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,vimeo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,vimeocdn.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,twitch.tv,VPNHUB.UK
+  - DOMAIN-SUFFIX,flickr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,staticflickr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,imgur.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,pixiv.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,skype.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,wire.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,line-apps.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tdesktop.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,bing.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,duckduckgo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,startpage.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,digicert.com,VPNHUB.UK
+  - DOMAIN,ocsp.comodoca.com,VPNHUB.UK
+  - DOMAIN,ocsp.usertrust.com,VPNHUB.UK
+  - DOMAIN,ocsp.sectigo.com,VPNHUB.UK
+  - DOMAIN,ocsp.verisign.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,globalsign.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,usertrust.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,comodoca.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,akamaized.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,cloudflare.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,cloudfront.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,fastly.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,edgekey.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,edgesuite.net,VPNHUB.UK
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN,cn.bing.com,DIRECT
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,wechat,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-SUFFIX,appsflyer.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - IP-CIDR,203.208.39.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.40.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.41.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.43.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.50.0/24,VPNHUB.UK,no-resolve
+  - DOMAIN,injections.adguard.org,DIRECT
+  - DOMAIN,local.adguard.org,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,VPNHUB.UK
