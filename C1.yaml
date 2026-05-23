@@ -1,1 +1,297 @@
-dmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2VuY3J5cHRpb249bm9uZSZmcD1zYWZhcmkmaG9zdD1qcC1seC43NzcwNzYueHl6JnBhdGg9JTJGbGlhbmd4aW4lMkZqcDEmc2VjdXJpdHk9dGxzJnNuaT1qcC1seC43NzcwNzYueHl6JnR5cGU9d3MjJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlAxCnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGNmeWVzLmx4eTEwMTUudG9wOjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZnA9c2FmYXJpJmhvc3Q9anAyLWx4Ljc3NzA3Ni54eXomcGF0aD0lMkZsaWFuZ3hpbiUyRmpwMSZzZWN1cml0eT10bHMmc25pPWpwMi1seC43NzcwNzYueHl6JnR5cGU9d3MjJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlAyCnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5rMS5saWFuZ3hpbjEueHl6OjM1MjQ4P2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9c2FmYXJpJnBiaz1JR3NTeEMwd2duN3dMeTBOTTBRTl95T1JFREtUXzgxNFlfM19yYmdEb1RjJnNlY3VyaXR5PXJlYWxpdHkmc2lkPWM4YzBmOTUxJnNuaT13d3cubGFtZXIuY29tLmhrIyVGMCU5RiU4NyVBRCVGMCU5RiU4NyVCMEhLMQp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGluazIubGlhbmd4aW4xLnh5ejozODcyNT9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPXNhZmFyaSZwYms9SHZ3bkxCTU1Lc212Z2hHWDV5VlBxM0oySFd4d3IxR0dRQjJXSXZiUHZBWSZzZWN1cml0eT1yZWFsaXR5JnNpZD04ZjZjYTM3OCZzbmk9d3d3LmxhbWVyLmNvbS5oayMlRjAlOUYlODclQUQlRjAlOUYlODclQjBISzIKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmszLmxpYW5neGluMS54eXo6Mjc3NTg/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZmcD1pb3MmcGJrPUVZYTRpYzNHQXhxem5WNjFVLU9Pd3ctV0tzdTV3dVFRcHR5UzNmdzdjek0mc2VjdXJpdHk9cmVhbGl0eSZzaWQ9YzUwZGIzOWYmc25pPXd3dy5sYW1lci5jb20uaGsjJUYwJTlGJTg3JUFEJUYwJTlGJTg3JUIwSEszCnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5rNC5saWFuZ3hpbjEueHl6OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPWlvcyZwYms9M0ZQR1RheGtmT00zbkVVV1V5Q2lxa0g1b0pHc094LVd4UEpmQURpMVFXWSZzZWN1cml0eT1yZWFsaXR5JnNpZD03ZjM2OWUxNCZzbmk9d3d3LmxhbWVyLmNvbS5oayMlRjAlOUYlODclQUQlRjAlOUYlODclQjBISzQKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbms1LmxpYW5neGluMS54eXo6NDQzP2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9aW9zJnBiaz1hMTFnZERldGFjS0JzaUJCZmhzUHZhblRHTXRWeVpFSXZheDdnVTVXcGxnJnNlY3VyaXR5PXJlYWxpdHkmc2lkPTliZjM4NTA4JnNuaT13d3cubGFtZXIuY29tLmhrIyVGMCU5RiU4NyVBRCVGMCU5RiU4NyVCMEhLNQp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGluazcubGlhbmd4aW4xLnh5ejo0ODU3ND9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPWlvcyZwYms9bG14U2F5Tjh0VWcyRGFnMk1QWHJkcVoyU1FLOUszT2psYUtrOHdWQ1JuYyZzZWN1cml0eT1yZWFsaXR5JnNpZD1mOGYxODkwMiZzbmk9d3d3LmxhbWVyLmNvbS5zZyMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzEKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbms4LmxpYW5neGluMS54eXo6Mzk2NDU/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZmcD1pb3MmcGJrPXg3VnFwRlA3X1ByWTRlYk53OGhpOEVjNVRtNVVwbXQ1Sk9kck4xTTlWblEmc2VjdXJpdHk9cmVhbGl0eSZzaWQ9MmIzYjBiOTMmc25pPWlvc2FwcHMuaXR1bmVzLmFwcGxlLmNvbSMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzIKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbms5LmxpYW5neGluMS54eXo6MjM1ODc/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZmcD1pb3MmcGJrPUg2NlBMTGY2SGtad0hrNG9GcWlzZlRhd0l2dzJjeGtFd2s4VWU4c0haZ0Emc2VjdXJpdHk9cmVhbGl0eSZzaWQ9MTliNTgwYWUmc25pPWlvc2FwcHMuaXR1bmVzLmFwcGxlLmNvbSMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzMKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmszMC5saWFuZ3hpbjEueHl6OjIzNTY4P2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9c2FmYXJpJnBiaz1FamNNLUVOcnBXWThpSUw4MnFKdFFyWmdSczRLbFZxaGRpc3FMQVhvblVZJnNlY3VyaXR5PXJlYWxpdHkmc2lkPTU1ZDA0NmRjJnNuaT13d3cubGFtZXIuY29tLmhrIyVGMCU5RiU4NyVCOCVGMCU5RiU4NyVBQ1NHNAp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGluazMxLmxpYW5neGluMS54eXo6NDQzP2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9c2FmYXJpJnBiaz13WGF5ZmNrdXJTTTJ6V2VpczdPQUxfUVZHbTl3QkxyMFdZcDJ6RnRKRkFFJnNlY3VyaXR5PXJlYWxpdHkmc2lkPWM3NDg3YWViJnNuaT1kb3dubG9hZC1wb3J0ZXIuaG95b3ZlcnNlLmNvbSMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzUKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2VuY3J5cHRpb249bm9uZSZmcD1jaHJvbWUmaG9zdD1seC0xc2cubHh5MTAxNS50b3AmcGF0aD0lMkZsaWFuZ3hpbiUyRnNnMSZzZWN1cml0eT10bHMmc25pPWx4LTFzZy5seHkxMDE1LnRvcCZ0eXBlPXdzIyVGMCU5RiU4NyVCOCVGMCU5RiU4NyVBQ1NHNgp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBjZnllcy5seHkxMDE1LnRvcDo0NDM/ZW5jcnlwdGlvbj1ub25lJmZwPWNocm9tZSZob3N0PWx4LTFzZy5seHkxMDE1LnRvcCZwYXRoPSUyRmxpYW5neGluJTJGc2cxJnNlY3VyaXR5PXRscyZzbmk9bHgtMXNnLmx4eTEwMTUudG9wJnR5cGU9d3MjJUYwJTlGJTg3JUI4JUYwJTlGJTg3JUFDU0c3CnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGNmeWVzLmx4eTEwMTUudG9wOjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZnA9Y2hyb21lJmhvc3Q9bHgtMXNnLmx4eTEwMTUudG9wJnBhdGg9JTJGbGlhbmd4aW4lMkZzZzEmc2VjdXJpdHk9dGxzJnNuaT1seC0xc2cubHh5MTAxNS50b3AmdHlwZT13cyMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzgKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmsxMy5saWFuZ3hpbjEueHl6OjM2NTc0P2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9c2FmYXJpJnBiaz1zREctS1FrMUJGN1Y4My14bm1yV0RvdVh4cFBkX1pTeEtjSHJKSnpib2xzJnNlY3VyaXR5PXJlYWxpdHkmc2lkPTMyYTM2NTBkJnNuaT13d3cuYXBwbGUuY29tLmNuIyVGMCU5RiU4NyVBRiVGMCU5RiU4NyVCNUpQMwp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGluazE0LmxpYW5neGluMS54eXo6MjU0ODU/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZmcD1pb3MmcGJrPVZPRlNqaldUMHdJSDNRMG50eUVaZDhXd2tzcklBYjVnUHRfM1BCbkVBU2cmc2VjdXJpdHk9cmVhbGl0eSZzaWQ9OWM1YjhjNTMmc25pPXd3dy5hcHBsZS5jb20uY24jJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlA0CnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5rMTkubGlhbmd4aW4xLnh5ejo4NjU0P2VuY3J5cHRpb249bm9uZSZmbG93PXh0bHMtcnByeC12aXNpb24mZnA9c2FmYXJpJnBiaz1RRTVsMFJVcXM0T3NIM2ozdV94SG0wNi00TmxJTG1RaXZaVUpxaUV4MTFvJnNlY3VyaXR5PXJlYWxpdHkmc2lkPTYzMTRlODI1JnNuaT1kb3dubG9hZC1wb3J0ZXIuaG95b3ZlcnNlLmNvbSMlRjAlOUYlODclQUYlRjAlOUYlODclQjVKUDUKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmsyMC5saWFuZ3hpbjEueHl6OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPWlvcyZwYms9UUU1bDBSVXFzNE9zSDNqM3VfeEhtMDYtNE5sSUxtUWl2WlVKcWlFeDExbyZzZWN1cml0eT1yZWFsaXR5JnNpZD02MzE0ZTgyNSZzbmk9ZG93bmxvYWQtcG9ydGVyLmhveW92ZXJzZS5jb20jJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlA2CnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5rMjMubGlhbmd4aW4xLnh5ejo0NDM/ZW5jcnlwdGlvbj1ub25lJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZmcD1zYWZhcmkmcGJrPWRMbVVBcWNkeTRaN2l1Y0FwZDl6ak9oa1hUamwteHRfZUh1bVNoSVlXMGMmc2VjdXJpdHk9cmVhbGl0eSZzaWQ9YmE4MjZhNTQmc25pPWRvd25sb2FkLXBvcnRlci5ob3lvdmVyc2UuY29tIyVGMCU5RiU4NyVBRiVGMCU5RiU4NyVCNUpQNwp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBjZnllcy5seHkxMDE1LnRvcDo0NDM/ZW5jcnlwdGlvbj1ub25lJmZwPWNocm9tZSZob3N0PWx4LTFqcC5seHkxMDE1LnRvcCZwYXRoPSUyRmxpYW5neGluJTJGanAxJnNlY3VyaXR5PXRscyZzbmk9bHhzMWpwLmx4eTEwMTUudG9wJnR5cGU9d3MjJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlA4CnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGNmeWVzLmx4eTEwMTUudG9wOjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZnA9Y2hyb21lJmhvc3Q9bHgtMWpwLmx4eTEwMTUudG9wJnBhdGg9JTJGbGlhbmd4aW4lMkZqcDEmc2VjdXJpdHk9dGxzJnNuaT1seHMxanAubHh5MTAxNS50b3AmdHlwZT13cyMlRjAlOUYlODclQUYlRjAlOUYlODclQjVKUDkKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2VuY3J5cHRpb249bm9uZSZmcD1jaHJvbWUmaG9zdD1seC0yanAubHh5MTAxNS50b3AmcGF0aD0lMkZsaWFuZ3hpbiUyRmpwMSZzZWN1cml0eT10bHMmc25pPWx4czJqcC5seHkxMDE1LnRvcCZ0eXBlPXdzIyVGMCU5RiU4NyVBRiVGMCU5RiU4NyVCNUpQMTAKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2VuY3J5cHRpb249bm9uZSZmcD1jaHJvbWUmaG9zdD1seC0yanAubHh5MTAxNS50b3AmcGF0aD0lMkZsaWFuZ3hpbiUyRmpwMSZzZWN1cml0eT10bHMmc25pPWx4czJqcC5seHkxMDE1LnRvcCZ0eXBlPXdzIyVGMCU5RiU4NyVBRiVGMCU5RiU4NyVCNUpQMTEKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2VuY3J5cHRpb249bm9uZSZmcD1jaHJvbWUmaG9zdD1seC11czEubHh5MTAxNS50b3AmcGF0aD0lMkZsaWFuZ3hpbiUyRnVzJnNlY3VyaXR5PXRscyZzbmk9bHgtdXMxLmx4eTEwMTUudG9wJnR5cGU9d3MjJUYwJTlGJTg3JUJBJUYwJTlGJTg3JUI4VVMxCnZsZXNzOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGNmeWVzLmx4eTEwMTUudG9wOjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZnA9Y2hyb21lJmhvc3Q9bHgtdXMxLmx4eTEwMTUudG9wJnBhdGg9JTJGbGlhbmd4aW4lMkZ1cyZzZWN1cml0eT10bHMmc25pPWx4LXVzMS5seHkxMDE1LnRvcCZ0eXBlPXdzIyVGMCU5RiU4NyVCQSVGMCU5RiU4NyVCOFVTMgp2bGVzczovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBjZnllcy5seHkxMDE1LnRvcDo0NDM/ZW5jcnlwdGlvbj1ub25lJmZwPWlvcyZob3N0PWdiLWx4Ljc3NzA3Ni54eXomcGF0aD0lMkZsaWFuZ3hpbiUyRmdiMSZzZWN1cml0eT10bHMmc25pPWdiLWx4Ljc3NzA3Ni54eXomdHlwZT13cyMlRjAlOUYlODclQUMlRjAlOUYlODclQTdVSzEKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmsyNy5saWFuZ3hpbjEueHl6OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPXNhZmFyaSZwYms9YTlJMnVBM05OWkE2dUJBZTNUdWk5dlo4Q0c1TXJNYVlPaWZXckFkYzB6ZyZzZWN1cml0eT1yZWFsaXR5JnNpZD1hODYwOWJlOCZzbmk9ZG93bmxvYWQtcG9ydGVyLmhveW92ZXJzZS5jb20jJUYwJTlGJTg3JUIwJUYwJTlGJTg3JUI3SzEKdmxlc3M6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmsyOC5saWFuZ3hpbjEueHl6OjQ0Mz9lbmNyeXB0aW9uPW5vbmUmZmxvdz14dGxzLXJwcngtdmlzaW9uJmZwPXNhZmFyaSZwYms9UEZUYzlDbjE3Nkh4TGh0QkNJek9OR1pJQlZESkpvZHNDczRRSGFUdDdTYyZzZWN1cml0eT1yZWFsaXR5JnNpZD1iOGZlNTdmZSZzbmk9ZG93bmxvYWQtcG9ydGVyLmhveW92ZXJzZS5jb20jJUYwJTlGJTg3JUE4JUYwJTlGJTg3JUIzQ04xCmh5c3RlcmlhMjovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGlua2h5MS5saWFuZ3hpbjEueHl6OjYwMDAwP2luc2VjdXJlPTEmc25pPWlvc2FwcHMuaXR1bmVzLmFwcGxlLmNvbSMlRjAlOUYlODclQUQlRjAlOUYlODclQjBISzYKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5raHkyLmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9aW9zYXBwcy5pdHVuZXMuYXBwbGUuY29tIyVGMCU5RiU4NyVBRCVGMCU5RiU4NyVCMEhLNwpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmtoeTMubGlhbmd4aW4xLnh5ejo2MDAwMD9pbnNlY3VyZT0xJnNuaT1pb3NhcHBzLml0dW5lcy5hcHBsZS5jb20jJUYwJTlGJTg3JUFEJUYwJTlGJTg3JUIwSEs4Cmh5c3RlcmlhMjovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGlua2h5NC5saWFuZ3hpbjEueHl6OjYwMDAwP2luc2VjdXJlPTEmc25pPWlvc2FwcHMuaXR1bmVzLmFwcGxlLmNvbSMlRjAlOUYlODclQUQlRjAlOUYlODclQjBISzkKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5raHk5LmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9aW9zYXBwcy5pdHVuZXMuYXBwbGUuY29tIyVGMCU5RiU4NyVCOCVGMCU5RiU4NyVBQ1NHOQpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmtoeTEwLmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9aW9zYXBwcy5pdHVuZXMuYXBwbGUuY29tIyVGMCU5RiU4NyVCOCVGMCU5RiU4NyVBQ1NHMTAKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5raHkxMS5saWFuZ3hpbjEueHl6OjYwMDAwP2luc2VjdXJlPTEmc25pPWlvc2FwcHMuaXR1bmVzLmFwcGxlLmNvbSMlRjAlOUYlODclQjglRjAlOUYlODclQUNTRzExCmh5c3RlcmlhMjovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGlua2h5MTIubGlhbmd4aW4xLnh5ejo2MDAwMD9pbnNlY3VyZT0xJnNuaT1pb3NhcHBzLml0dW5lcy5hcHBsZS5jb20jJUYwJTlGJTg3JUI4JUYwJTlGJTg3JUFDU0cxMgpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmtoeTE1LmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9YmlsaWJpbGktanAuYmlsaWltZy5jb20jJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlAxMgpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmtoeTE2LmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9YmlsaWJpbGktanAyLmJpbGlpbWcuY29tIyVGMCU5RiU4NyVBRiVGMCU5RiU4NyVCNUpQMTMKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5raHkxNy5saWFuZ3hpbjEueHl6OjYwMDAwP2luc2VjdXJlPTEmc25pPWJpbGliaWxpLWpwMy5iaWxpaW1nLmNvbSMlRjAlOUYlODclQUYlRjAlOUYlODclQjVKUDE0Cmh5c3RlcmlhMjovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEBhd3MtbGlua2h5MTgubGlhbmd4aW4xLnh5ejo2MDAwMD9pbnNlY3VyZT0xJnNuaT1iaWxpYmlsaS1qcDQuYmlsaWltZy5jb20jJUYwJTlGJTg3JUFGJUYwJTlGJTg3JUI1SlAxNQpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAYXdzLWxpbmtoeTIxLmxpYW5neGluMS54eXo6NjAwMDA/aW5zZWN1cmU9MSZzbmk9YmlsaWJpbGkta3IuYmlsaWltZy5jb20jJUYwJTlGJTg3JUIwJUYwJTlGJTg3JUI3SzIKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QGF3cy1saW5raHkyMi5saWFuZ3hpbjEueHl6OjYwMDAwP2luc2VjdXJlPTEmc25pPWJpbGliaWxpLXR3LmJpbGlpbWcuY29tIyVGMCU5RiU4NyVBOCVGMCU5RiU4NyVCM0NOMgpoeXN0ZXJpYTI6Ly82MDkzMDgyYy1iZTVlLTQ5NmEtOTJlNy04ZTk3NGFiMGIwNzhAMjAzLjU3LjgyLjEwNzo2MDAwMD9pbnNlY3VyZT0xJnNuaT1iaWxpYmlsaS1nYi5iaWxpaW1nLmNvbSMlRjAlOUYlODclQUMlRjAlOUYlODclQTdVSzIKaHlzdGVyaWEyOi8vNjA5MzA4MmMtYmU1ZS00OTZhLTkyZTctOGU5NzRhYjBiMDc4QDIwMy41Ny44Mi4xMDc6NjAwMDA/aW5zZWN1cmU9MSZzbmk9YmlsaWJpbGktZ2IuYmlsaWltZy5jb20jJUYwJTlGJTg3JUFDJUYwJTlGJTg3JUE3VUszCmh5c3RlcmlhMjovLzYwOTMwODJjLWJlNWUtNDk2YS05MmU3LThlOTc0YWIwYjA3OEAyMDMuMTAuOTcuMTIxOjYwMDAwP2luc2VjdXJlPTEmc25pPXd3dy5hcHBsZS5jb20jJUYwJTlGJTg3JUJBJUYwJTlGJTg3JUI4VVMz
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+proxies:
+    - { name: 🇯🇵JP1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp-lx.777076.xyz } } }
+    - { name: 🇯🇵JP2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp2-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp2-lx.777076.xyz } } }
+    - { name: 🇭🇰HK1, type: vless, server: aws-link1.liangxin1.xyz, port: 35248, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: c8c0f951 } }
+    - { name: 🇭🇰HK2, type: vless, server: aws-link2.liangxin1.xyz, port: 38725, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: HvwnLBMMKsmvghGX5yVPq3J2HWxwr1GGQB2WIvbPvAY, short-id: 8f6ca378 } }
+    - { name: 🇭🇰HK3, type: vless, server: aws-link3.liangxin1.xyz, port: 27758, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: EYa4ic3GAxqznV61U-OOww-WKsu5wuQQptyS3fw7czM, short-id: c50db39f } }
+    - { name: 🇭🇰HK4, type: vless, server: aws-link4.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: 3FPGTaxkfOM3nEUWUyCiqkH5oJGsOx-WxPJfADi1QWY, short-id: 7f369e14 } }
+    - { name: 🇭🇰HK5, type: vless, server: aws-link5.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: a11gdDetacKBsiBBfhsPvanTGMtVyZEIvax7gU5Wplg, short-id: 9bf38508 } }
+    - { name: 🇸🇬SG1, type: vless, server: aws-link7.liangxin1.xyz, port: 48574, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.sg, reality-opts: { public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc, short-id: f8f18902 } }
+    - { name: 🇸🇬SG2, type: vless, server: aws-link8.liangxin1.xyz, port: 39645, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ, short-id: 2b3b0b93 } }
+    - { name: 🇸🇬SG3, type: vless, server: aws-link9.liangxin1.xyz, port: 23587, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA, short-id: 19b580ae } }
+    - { name: 🇸🇬SG4, type: vless, server: aws-link30.liangxin1.xyz, port: 23568, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY, short-id: 55d046dc } }
+    - { name: 🇸🇬SG5, type: vless, server: aws-link31.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE, short-id: c7487aeb } }
+    - { name: 🇸🇬SG6, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇸🇬SG7, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇸🇬SG8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇯🇵JP3, type: vless, server: aws-link13.liangxin1.xyz, port: 36574, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.apple.com.cn, reality-opts: { public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols, short-id: 32a3650d } }
+    - { name: 🇯🇵JP4, type: vless, server: aws-link14.liangxin1.xyz, port: 25485, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.apple.com.cn, reality-opts: { public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg, short-id: 9c5b8c53 } }
+    - { name: 🇯🇵JP5, type: vless, server: aws-link19.liangxin1.xyz, port: 8654, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
+    - { name: 🇯🇵JP6, type: vless, server: aws-link20.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
+    - { name: 🇯🇵JP7, type: vless, server: aws-link23.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c, short-id: ba826a54 } }
+    - { name: 🇯🇵JP8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
+    - { name: 🇯🇵JP9, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
+    - { name: 🇯🇵JP10, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
+    - { name: 🇯🇵JP11, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
+    - { name: 🇺🇸US1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
+    - { name: 🇺🇸US2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
+    - { name: 🇬🇧UK1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: gb-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/gb1, headers: { Host: gb-lx.777076.xyz } } }
+    - { name: 🇰🇷K1, type: vless, server: aws-link27.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg, short-id: a8609be8 } }
+    - { name: 🇨🇳CN1, type: vless, server: aws-link28.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: PFTc9Cn176HxLhtBCIzONGZIBVDJJodsCs4QHaTt7Sc, short-id: b8fe57fe } }
+    - { name: 🇭🇰HK6, server: aws-linkhy1.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇭🇰HK7, server: aws-linkhy2.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇭🇰HK8, server: aws-linkhy3.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇭🇰HK9, server: aws-linkhy4.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇸🇬SG9, server: aws-linkhy9.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇸🇬SG10, server: aws-linkhy10.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇸🇬SG11, server: aws-linkhy11.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇸🇬SG12, server: aws-linkhy12.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇯🇵JP12, server: aws-linkhy15.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇯🇵JP13, server: aws-linkhy16.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp2.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇯🇵JP14, server: aws-linkhy17.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp3.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇯🇵JP15, server: aws-linkhy18.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp4.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇰🇷K2, server: aws-linkhy21.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-kr.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇨🇳CN2, server: aws-linkhy22.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-tw.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇬🇧UK2, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇬🇧UK3, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+    - { name: 🇺🇸US3, server: 203.10.97.121, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
+
+
+proxy-groups:
+
+# 🔰 Main Entry (User Select)
+  - name: VPNHUB.UK
+    type: select 
+    proxies:
+      - Ai Auto Select
+      # 🇭🇰 Hong Kong
+      - 🇭🇰HK1
+      - 🇭🇰HK2
+      - 🇭🇰HK3
+      - 🇭🇰HK4
+      - 🇭🇰HK5
+      - 🇭🇰HK6
+      - 🇭🇰HK7
+      - 🇭🇰HK8
+      - 🇭🇰HK9
+
+      # 🇺🇸 United States
+      - 🇺🇸US1
+      - 🇺🇸US2
+      - 🇺🇸US3
+
+      # 🇬🇧 United Kingdom
+      - 🇬🇧UK1
+      - 🇬🇧UK2
+      - 🇬🇧UK3
+      
+      # 🇨🇳 China
+      - 🇨🇳CN1
+      - 🇨🇳CN2
+
+# ⚡ Auto Fastest (JP + SG + US + KR)
+  - name: Ai Auto Select
+    type: url-test
+    include-all: true
+    filter: (?i)(SG|JP|KR)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 10
+    proxies:
+
+rules:
+  - IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve
+  - IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve
+  - DOMAIN-SUFFIX,services.googleapis.cn,VPNHUB.UK
+  - DOMAIN-KEYWORD,google,VPNHUB.UK
+  - DOMAIN-KEYWORD,gmail,VPNHUB.UK
+  - DOMAIN-KEYWORD,youtube,VPNHUB.UK
+  - DOMAIN-SUFFIX,youtu.be,VPNHUB.UK
+  - DOMAIN-SUFFIX,ytimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,gstatic.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,ggpht.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,gmodules.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,firebaseio.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,appspot.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,android.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,chromium.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,g.co,VPNHUB.UK
+  - DOMAIN-SUFFIX,goo.gl,VPNHUB.UK
+  - DOMAIN-KEYWORD,facebook,VPNHUB.UK
+  - DOMAIN-SUFFIX,fb.me,VPNHUB.UK
+  - DOMAIN-SUFFIX,fbcdn.net,VPNHUB.UK
+  - DOMAIN-KEYWORD,instagram,VPNHUB.UK
+  - DOMAIN-KEYWORD,whatsapp,VPNHUB.UK
+  - DOMAIN-KEYWORD,twitter,VPNHUB.UK
+  - DOMAIN-SUFFIX,twimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tweetdeck.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,yahoo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,yimg.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,telegram.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,telegra.ph,VPNHUB.UK
+  - IP-CIDR,91.108.4.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.8.0/21,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.16.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,91.108.56.0/22,VPNHUB.UK,no-resolve
+  - IP-CIDR,149.154.160.0/20,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,VPNHUB.UK,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,VPNHUB.UK,no-resolve
+  - DOMAIN,developer.apple.com,DIRECT
+  - DOMAIN,ocsp.apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-dns.net,DIRECT
+  - DOMAIN,testflight.apple.com,DIRECT
+  - DOMAIN,sandbox.itunes.apple.com,DIRECT
+  - DOMAIN,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,apps.apple.com,DIRECT
+  - DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
+  - DOMAIN,cvws.icloud-content.com,DIRECT
+  - DOMAIN-KEYWORD,amazon,VPNHUB.UK
+  - DOMAIN-SUFFIX,awsstatic.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,live.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,live.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,hotmail.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,outlook.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,onedrive.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,onenote.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,windows.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,windows.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,msedge.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,azureedge.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,azurewebsites.net,VPNHUB.UK
+  - DOMAIN-KEYWORD,github,VPNHUB.UK
+  - DOMAIN-SUFFIX,git.io,VPNHUB.UK
+  - DOMAIN-SUFFIX,stackoverflow.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,docker.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,bitbucket.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,cocoapods.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,golang.org,VPNHUB.UK
+  - DOMAIN-SUFFIX,angularjs.org,VPNHUB.UK
+  - DOMAIN-KEYWORD,dropbox,VPNHUB.UK
+  - DOMAIN-SUFFIX,box.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,box.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,mega.nz,VPNHUB.UK
+  - DOMAIN-SUFFIX,mega.co.nz,VPNHUB.UK
+  - DOMAIN-KEYWORD,blogspot,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogspot.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogspot.hk,VPNHUB.UK
+  - DOMAIN-SUFFIX,blogger.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,pinterest.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,linkedin.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tumblr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tumblr.co,VPNHUB.UK
+  - DOMAIN-SUFFIX,spotify.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,soundcloud.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,sndcdn.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,vimeo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,vimeocdn.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,twitch.tv,VPNHUB.UK
+  - DOMAIN-SUFFIX,flickr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,staticflickr.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,imgur.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,pixiv.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,skype.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,wire.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,line-apps.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,tdesktop.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,bing.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,duckduckgo.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,startpage.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,digicert.com,VPNHUB.UK
+  - DOMAIN,ocsp.comodoca.com,VPNHUB.UK
+  - DOMAIN,ocsp.usertrust.com,VPNHUB.UK
+  - DOMAIN,ocsp.sectigo.com,VPNHUB.UK
+  - DOMAIN,ocsp.verisign.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,globalsign.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,usertrust.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,comodoca.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,akamaized.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,cloudflare.com,VPNHUB.UK
+  - DOMAIN-SUFFIX,cloudfront.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,fastly.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,edgekey.net,VPNHUB.UK
+  - DOMAIN-SUFFIX,edgesuite.net,VPNHUB.UK
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN,cn.bing.com,DIRECT
+  - DOMAIN-SUFFIX,126.com,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-KEYWORD,alicdn,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,douban.com,DIRECT
+  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,zhihu.com,DIRECT
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-SUFFIX,appsflyer.com,REJECT
+  - DOMAIN-SUFFIX,doubleclick.net,REJECT
+  - IP-CIDR,203.208.39.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.40.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.41.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.43.0/24,VPNHUB.UK,no-resolve
+  - IP-CIDR,203.208.50.0/24,VPNHUB.UK,no-resolve
+  - DOMAIN,injections.adguard.org,DIRECT
+  - DOMAIN,local.adguard.org,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,VPNHUB.UK
