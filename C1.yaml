@@ -1,92 +1,71 @@
 mixed-port: 7890
 allow-lan: false
-bind-address: "*"
+bind-address: '*'
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: '127.0.0.1:9090'
 unified-delay: true
 tcp-concurrent: true
 dns:
-  enable: true
-  ipv6: false
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  respect-rules: true
-  proxy-server-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 114.114.114.114
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 114.114.114.114
-  fallback:
-    - 1.1.1.1
-    - 8.8.8.8
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    respect-rules: true
+    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    fallback: [1.1.1.1, 8.8.8.8]
+    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: 🇯🇵JP1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp-lx.777076.xyz } } }
-    - { name: 🇯🇵JP2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp2-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp2-lx.777076.xyz } } }
-    - { name: 🇭🇰HK1, type: vless, server: aws-link1.liangxin1.xyz, port: 35248, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: c8c0f951 } }
-    - { name: 🇭🇰HK2, type: vless, server: aws-link2.liangxin1.xyz, port: 38725, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: HvwnLBMMKsmvghGX5yVPq3J2HWxwr1GGQB2WIvbPvAY, short-id: 8f6ca378 } }
-    - { name: 🇭🇰HK3, type: vless, server: aws-link3.liangxin1.xyz, port: 27758, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: EYa4ic3GAxqznV61U-OOww-WKsu5wuQQptyS3fw7czM, short-id: c50db39f } }
-    - { name: 🇭🇰HK4, type: vless, server: aws-link4.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: 3FPGTaxkfOM3nEUWUyCiqkH5oJGsOx-WxPJfADi1QWY, short-id: 7f369e14 } }
-    - { name: 🇭🇰HK5, type: vless, server: aws-link5.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: a11gdDetacKBsiBBfhsPvanTGMtVyZEIvax7gU5Wplg, short-id: 9bf38508 } }
-    - { name: 🇸🇬SG1, type: vless, server: aws-link7.liangxin1.xyz, port: 48574, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.sg, reality-opts: { public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc, short-id: f8f18902 } }
-    - { name: 🇸🇬SG2, type: vless, server: aws-link8.liangxin1.xyz, port: 39645, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ, short-id: 2b3b0b93 } }
-    - { name: 🇸🇬SG3, type: vless, server: aws-link9.liangxin1.xyz, port: 23587, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA, short-id: 19b580ae } }
-    - { name: 🇸🇬SG4, type: vless, server: aws-link30.liangxin1.xyz, port: 23568, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY, short-id: 55d046dc } }
-    - { name: 🇸🇬SG5, type: vless, server: aws-link31.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE, short-id: c7487aeb } }
-    - { name: 🇸🇬SG6, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
-    - { name: 🇸🇬SG7, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
-    - { name: 🇸🇬SG8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
-    - { name: 🇯🇵JP3, type: vless, server: aws-link13.liangxin1.xyz, port: 36574, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.apple.com.cn, reality-opts: { public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols, short-id: 32a3650d } }
-    - { name: 🇯🇵JP4, type: vless, server: aws-link14.liangxin1.xyz, port: 25485, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.apple.com.cn, reality-opts: { public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg, short-id: 9c5b8c53 } }
-    - { name: 🇯🇵JP5, type: vless, server: aws-link19.liangxin1.xyz, port: 8654, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
-    - { name: 🇯🇵JP6, type: vless, server: aws-link20.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
-    - { name: 🇯🇵JP7, type: vless, server: aws-link23.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c, short-id: ba826a54 } }
-    - { name: 🇯🇵JP8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
-    - { name: 🇯🇵JP9, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
-    - { name: 🇯🇵JP10, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
-    - { name: 🇯🇵JP11, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
-    - { name: 🇺🇸US1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
-    - { name: 🇺🇸US2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
-    - { name: 🇬🇧UK1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: gb-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/gb1, headers: { Host: gb-lx.777076.xyz } } }
-    - { name: 🇰🇷K1, type: vless, server: aws-link27.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg, short-id: a8609be8 } }
-    - { name: 🇨🇳CN1, type: vless, server: aws-link28.liangxin1.xyz, port: 443, uuid: 6093082c-be5e-496a-92e7-8e974ab0b078, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: PFTc9Cn176HxLhtBCIzONGZIBVDJJodsCs4QHaTt7Sc, short-id: b8fe57fe } }
-    - { name: 🇭🇰HK6, server: aws-linkhy1.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇭🇰HK7, server: aws-linkhy2.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇭🇰HK8, server: aws-linkhy3.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇭🇰HK9, server: aws-linkhy4.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇸🇬SG9, server: aws-linkhy9.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇸🇬SG10, server: aws-linkhy10.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇸🇬SG11, server: aws-linkhy11.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇸🇬SG12, server: aws-linkhy12.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇯🇵JP12, server: aws-linkhy15.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇯🇵JP13, server: aws-linkhy16.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp2.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇯🇵JP14, server: aws-linkhy17.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp3.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇯🇵JP15, server: aws-linkhy18.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp4.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇰🇷K2, server: aws-linkhy21.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-kr.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇨🇳CN2, server: aws-linkhy22.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-tw.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇬🇧UK2, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇬🇧UK3, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-    - { name: 🇺🇸US3, server: 203.10.97.121, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 6093082c-be5e-496a-92e7-8e974ab0b078 }
-
+    - { name: 🇯🇵JP1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp-lx.777076.xyz } } }
+    - { name: 🇯🇵JP2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: jp2-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: jp2-lx.777076.xyz } } }
+    - { name: 🇭🇰HK1, type: vless, server: aws-link1.liangxin1.xyz, port: 35248, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: c8c0f951 } }
+    - { name: 🇭🇰HK2, type: vless, server: aws-link2.liangxin1.xyz, port: 38725, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: HvwnLBMMKsmvghGX5yVPq3J2HWxwr1GGQB2WIvbPvAY, short-id: 8f6ca378 } }
+    - { name: 🇭🇰HK3, type: vless, server: aws-link3.liangxin1.xyz, port: 27758, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: EYa4ic3GAxqznV61U-OOww-WKsu5wuQQptyS3fw7czM, short-id: c50db39f } }
+    - { name: 🇭🇰HK4, type: vless, server: aws-link4.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: 3FPGTaxkfOM3nEUWUyCiqkH5oJGsOx-WxPJfADi1QWY, short-id: 7f369e14 } }
+    - { name: 🇭🇰HK5, type: vless, server: aws-link5.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.hk, reality-opts: { public-key: a11gdDetacKBsiBBfhsPvanTGMtVyZEIvax7gU5Wplg, short-id: 9bf38508 } }
+    - { name: 🇭🇰HK6, type: vless, server: aws-link6.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: qUCQFvosamzk8NWdkalFmEMYinnt-_FnZZw6_9EdRVY, short-id: 6eb97c25 } }
+    - { name: 🇸🇬SG1, type: vless, server: aws-link7.liangxin1.xyz, port: 48574, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.lamer.com.sg, reality-opts: { public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc, short-id: f8f18902 } }
+    - { name: 🇸🇬SG2, type: vless, server: aws-link8.liangxin1.xyz, port: 39645, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ, short-id: 2b3b0b93 } }
+    - { name: 🇸🇬SG3, type: vless, server: aws-link9.liangxin1.xyz, port: 23587, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: iosapps.itunes.apple.com, reality-opts: { public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA, short-id: 19b580ae } }
+    - { name: 🇸🇬SG4, type: vless, server: aws-link30.liangxin1.xyz, port: 23568, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.lamer.com.hk, reality-opts: { public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY, short-id: 55d046dc } }
+    - { name: 🇸🇬SG5, type: vless, server: aws-link31.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE, short-id: c7487aeb } }
+    - { name: 🇸🇬SG6, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇸🇬SG7, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇸🇬SG8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: { path: /liangxin/sg1, headers: { Host: lx-1sg.lxy1015.top } } }
+    - { name: 🇯🇵JP3, type: vless, server: aws-link13.liangxin1.xyz, port: 36574, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: www.apple.com.cn, reality-opts: { public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols, short-id: 32a3650d } }
+    - { name: 🇯🇵JP4, type: vless, server: aws-link14.liangxin1.xyz, port: 25485, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: www.apple.com.cn, reality-opts: { public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg, short-id: 9c5b8c53 } }
+    - { name: 🇯🇵JP5, type: vless, server: aws-link19.liangxin1.xyz, port: 8654, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
+    - { name: 🇯🇵JP6, type: vless, server: aws-link20.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: download-porter.hoyoverse.com, reality-opts: { public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: '6314e825' } }
+    - { name: 🇯🇵JP7, type: vless, server: aws-link23.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c, short-id: ba826a54 } }
+    - { name: 🇯🇵JP8, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
+    - { name: 🇯🇵JP9, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-1jp.lxy1015.top } } }
+    - { name: 🇯🇵JP10, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
+    - { name: 🇯🇵JP11, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: { path: /liangxin/jp1, headers: { Host: lx-2jp.lxy1015.top } } }
+    - { name: 🇺🇸US1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
+    - { name: 🇺🇸US2, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lx-us1.lxy1015.top, network: ws, ws-opts: { path: /liangxin/us, headers: { Host: lx-us1.lxy1015.top } } }
+    - { name: 🇬🇧UK1, type: vless, server: cfyes.lxy1015.top, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, tls: true, skip-cert-verify: false, client-fingerprint: ios, servername: gb-lx.777076.xyz, network: ws, ws-opts: { path: /liangxin/gb1, headers: { Host: gb-lx.777076.xyz } } }
+    - { name: 🇰🇷KR1, type: vless, server: aws-link27.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg, short-id: a8609be8 } }
+    - { name: 🇨🇳CN1, type: vless, server: aws-link28.liangxin1.xyz, port: 443, uuid: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b, udp: true, flow: xtls-rprx-vision, tls: true, skip-cert-verify: false, client-fingerprint: safari, servername: download-porter.hoyoverse.com, reality-opts: { public-key: PFTc9Cn176HxLhtBCIzONGZIBVDJJodsCs4QHaTt7Sc, short-id: b8fe57fe } }
+    - { name: 🇭🇰HK7, server: aws-linkhy1.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇭🇰HK8, server: aws-linkhy2.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇭🇰HK9, server: aws-linkhy3.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇭🇰HK10, server: aws-linkhy4.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇸🇬SG9, server: aws-linkhy9.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇸🇬SG10, server: aws-linkhy10.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇸🇬SG11, server: aws-linkhy11.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇸🇬SG12, server: aws-linkhy12.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: iosapps.itunes.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇯🇵JP12, server: aws-linkhy15.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇯🇵JP13, server: aws-linkhy16.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp2.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇯🇵JP14, server: aws-linkhy17.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp3.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇯🇵JP15, server: aws-linkhy18.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-jp4.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇰🇷KR2, server: aws-linkhy21.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-kr.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇨🇳CN2, server: aws-linkhy22.liangxin1.xyz, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-tw.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇬🇧UK2, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇬🇧UK3, server: 203.57.82.107, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: bilibili-gb.biliimg.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
+    - { name: 🇺🇸US3 V2, server: 203.10.97.121, port: 60000, ports: 60000-65530, mport: 60000-65530, udp: true, skip-cert-verify: true, sni: www.apple.com, type: hysteria2, password: 6fea4bf0-dad1-427c-ae5b-ca12d1b1662b }
 
 proxy-groups:
 
@@ -105,11 +84,12 @@ proxy-groups:
       - 🇭🇰HK7
       - 🇭🇰HK8
       - 🇭🇰HK9
+      - 🇭🇰HK10
 
       # 🇺🇸 United States
       - 🇺🇸US1
       - 🇺🇸US2
-      - 🇺🇸US3
+      - 🇺🇸US3 V2
 
       # 🇬🇧 United Kingdom
       - 🇬🇧UK1
@@ -130,168 +110,216 @@ proxy-groups:
     tolerance: 10
     proxies:
 
+
 rules:
-  - IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve
-  - IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve
-  - DOMAIN-SUFFIX,services.googleapis.cn,VPNHUB.UK
-  - DOMAIN-KEYWORD,google,VPNHUB.UK
-  - DOMAIN-KEYWORD,gmail,VPNHUB.UK
-  - DOMAIN-KEYWORD,youtube,VPNHUB.UK
-  - DOMAIN-SUFFIX,youtu.be,VPNHUB.UK
-  - DOMAIN-SUFFIX,ytimg.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,gstatic.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,ggpht.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,gmodules.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,firebaseio.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,appspot.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,android.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,chromium.org,VPNHUB.UK
-  - DOMAIN-SUFFIX,g.co,VPNHUB.UK
-  - DOMAIN-SUFFIX,goo.gl,VPNHUB.UK
-  - DOMAIN-KEYWORD,facebook,VPNHUB.UK
-  - DOMAIN-SUFFIX,fb.me,VPNHUB.UK
-  - DOMAIN-SUFFIX,fbcdn.net,VPNHUB.UK
-  - DOMAIN-KEYWORD,instagram,VPNHUB.UK
-  - DOMAIN-KEYWORD,whatsapp,VPNHUB.UK
-  - DOMAIN-KEYWORD,twitter,VPNHUB.UK
-  - DOMAIN-SUFFIX,twimg.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,tweetdeck.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,yahoo.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,yimg.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,telegram.org,VPNHUB.UK
-  - DOMAIN-SUFFIX,telegra.ph,VPNHUB.UK
-  - IP-CIDR,91.108.4.0/22,VPNHUB.UK,no-resolve
-  - IP-CIDR,91.108.8.0/21,VPNHUB.UK,no-resolve
-  - IP-CIDR,91.108.16.0/22,VPNHUB.UK,no-resolve
-  - IP-CIDR,91.108.56.0/22,VPNHUB.UK,no-resolve
-  - IP-CIDR,149.154.160.0/20,VPNHUB.UK,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,VPNHUB.UK,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,VPNHUB.UK,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,VPNHUB.UK,no-resolve
-  - DOMAIN,developer.apple.com,DIRECT
-  - DOMAIN,ocsp.apple.com,DIRECT
-  - DOMAIN-SUFFIX,apple-dns.net,DIRECT
-  - DOMAIN,testflight.apple.com,DIRECT
-  - DOMAIN,sandbox.itunes.apple.com,DIRECT
-  - DOMAIN,itunes.apple.com,DIRECT
-  - DOMAIN-SUFFIX,apps.apple.com,DIRECT
-  - DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
-  - DOMAIN,cvws.icloud-content.com,DIRECT
-  - DOMAIN-KEYWORD,amazon,VPNHUB.UK
-  - DOMAIN-SUFFIX,awsstatic.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,live.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,live.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,hotmail.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,outlook.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,onedrive.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,onenote.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,windows.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,windows.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,msedge.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,azureedge.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,azurewebsites.net,VPNHUB.UK
-  - DOMAIN-KEYWORD,github,VPNHUB.UK
-  - DOMAIN-SUFFIX,git.io,VPNHUB.UK
-  - DOMAIN-SUFFIX,stackoverflow.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,docker.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,bitbucket.org,VPNHUB.UK
-  - DOMAIN-SUFFIX,cocoapods.org,VPNHUB.UK
-  - DOMAIN-SUFFIX,golang.org,VPNHUB.UK
-  - DOMAIN-SUFFIX,angularjs.org,VPNHUB.UK
-  - DOMAIN-KEYWORD,dropbox,VPNHUB.UK
-  - DOMAIN-SUFFIX,box.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,box.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,mega.nz,VPNHUB.UK
-  - DOMAIN-SUFFIX,mega.co.nz,VPNHUB.UK
-  - DOMAIN-KEYWORD,blogspot,VPNHUB.UK
-  - DOMAIN-SUFFIX,blogspot.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,blogspot.hk,VPNHUB.UK
-  - DOMAIN-SUFFIX,blogger.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,pinterest.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,linkedin.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,tumblr.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,tumblr.co,VPNHUB.UK
-  - DOMAIN-SUFFIX,spotify.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,soundcloud.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,sndcdn.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,vimeo.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,vimeocdn.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,twitch.tv,VPNHUB.UK
-  - DOMAIN-SUFFIX,flickr.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,staticflickr.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,imgur.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,pixiv.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,skype.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,wire.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,line-apps.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,tdesktop.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,bing.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,duckduckgo.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,startpage.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,digicert.com,VPNHUB.UK
-  - DOMAIN,ocsp.comodoca.com,VPNHUB.UK
-  - DOMAIN,ocsp.usertrust.com,VPNHUB.UK
-  - DOMAIN,ocsp.sectigo.com,VPNHUB.UK
-  - DOMAIN,ocsp.verisign.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,globalsign.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,usertrust.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,comodoca.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,akamaized.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,cloudflare.com,VPNHUB.UK
-  - DOMAIN-SUFFIX,cloudfront.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,fastly.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,edgekey.net,VPNHUB.UK
-  - DOMAIN-SUFFIX,edgesuite.net,VPNHUB.UK
-  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,DIRECT
-  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-  - DOMAIN-SUFFIX,icloud.com,DIRECT
-  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
-  - DOMAIN-SUFFIX,me.com,DIRECT
-  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
-  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-  - DOMAIN-SUFFIX,apple.com,DIRECT
-  - DOMAIN,cn.bing.com,DIRECT
-  - DOMAIN-SUFFIX,126.com,DIRECT
-  - DOMAIN-SUFFIX,163.com,DIRECT
-  - DOMAIN-KEYWORD,alicdn,DIRECT
-  - DOMAIN-KEYWORD,alipay,DIRECT
-  - DOMAIN-KEYWORD,taobao,DIRECT
-  - DOMAIN-KEYWORD,baidu,DIRECT
-  - DOMAIN-SUFFIX,bilibili.com,DIRECT
-  - DOMAIN-SUFFIX,douban.com,DIRECT
-  - DOMAIN-SUFFIX,iqiyi.com,DIRECT
-  - DOMAIN-SUFFIX,jd.com,DIRECT
-  - DOMAIN-SUFFIX,mi.com,DIRECT
-  - DOMAIN-SUFFIX,qq.com,DIRECT
-  - DOMAIN-SUFFIX,weibo.com,DIRECT
-  - DOMAIN-SUFFIX,zhihu.com,DIRECT
-  - DOMAIN-KEYWORD,admarvel,REJECT
-  - DOMAIN-KEYWORD,admaster,REJECT
-  - DOMAIN-KEYWORD,adsage,REJECT
-  - DOMAIN-KEYWORD,adsmogo,REJECT
-  - DOMAIN-KEYWORD,adsrvmedia,REJECT
-  - DOMAIN-KEYWORD,adwords,REJECT
-  - DOMAIN-KEYWORD,adservice,REJECT
-  - DOMAIN-SUFFIX,appsflyer.com,REJECT
-  - DOMAIN-SUFFIX,doubleclick.net,REJECT
-  - IP-CIDR,203.208.39.0/24,VPNHUB.UK,no-resolve
-  - IP-CIDR,203.208.40.0/24,VPNHUB.UK,no-resolve
-  - IP-CIDR,203.208.41.0/24,VPNHUB.UK,no-resolve
-  - IP-CIDR,203.208.43.0/24,VPNHUB.UK,no-resolve
-  - IP-CIDR,203.208.50.0/24,VPNHUB.UK,no-resolve
-  - DOMAIN,injections.adguard.org,DIRECT
-  - DOMAIN,local.adguard.org,DIRECT
-  - DOMAIN-SUFFIX,local,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,17.0.0.0/8,DIRECT
-  - IP-CIDR,100.64.0.0/10,DIRECT
-  - IP-CIDR,224.0.0.0/4,DIRECT
-  - IP-CIDR6,fe80::/10,DIRECT
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,-cn,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,VPNHUB.UK
+# DNS & Google Core
+- 'IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve'
+- 'DOMAIN-SUFFIX,services.googleapis.cn,VPNHUB.UK'
+- 'DOMAIN-KEYWORD,google,VPNHUB.UK'
+- 'DOMAIN-KEYWORD,gmail,VPNHUB.UK'
+- 'DOMAIN-KEYWORD,youtube,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,youtu.be,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,ytimg.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,gstatic.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,ggpht.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,gmodules.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,firebaseio.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,appspot.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,android.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,chromium.org,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,g.co,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,goo.gl,VPNHUB.UK'
+
+# Meta (Facebook, Instagram, WhatsApp)
+- 'DOMAIN-KEYWORD,facebook,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,fb.me,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,fbcdn.net,VPNHUB.UK'
+- 'DOMAIN-KEYWORD,instagram,VPNHUB.UK'
+- 'DOMAIN-KEYWORD,whatsapp,VPNHUB.UK'
+
+# X (Twitter)
+- 'DOMAIN-KEYWORD,twitter,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,twimg.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,tweetdeck.com,VPNHUB.UK'
+
+# Yahoo
+- 'DOMAIN-SUFFIX,yahoo.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,yimg.com,VPNHUB.UK'
+
+# Telegram
+- 'DOMAIN-SUFFIX,telegram.org,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,telegra.ph,VPNHUB.UK'
+- 'IP-CIDR,91.108.4.0/22,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,91.108.8.0/21,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,91.108.16.0/22,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,91.108.56.0/22,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,149.154.160.0/20,VPNHUB.UK,no-resolve'
+- 'IP-CIDR6,2001:67c:4e8::/48,VPNHUB.UK,no-resolve'
+- 'IP-CIDR6,2001:b28:f23d::/48,VPNHUB.UK,no-resolve'
+- 'IP-CIDR6,2001:b28:f23f::/48,VPNHUB.UK,no-resolve'
+
+# Apple Services
+- 'DOMAIN,developer.apple.com,DIRECT'
+- 'DOMAIN,ocsp.apple.com,DIRECT'
+- 'DOMAIN-SUFFIX,apple-dns.net,DIRECT'
+- 'DOMAIN,testflight.apple.com,DIRECT'
+- 'DOMAIN,sandbox.itunes.apple.com,DIRECT'
+- 'DOMAIN,itunes.apple.com,DIRECT'
+- 'DOMAIN-SUFFIX,apps.apple.com,DIRECT'
+- 'DOMAIN-SUFFIX,blobstore.apple.com,DIRECT'
+- 'DOMAIN,cvws.icloud-content.com,DIRECT'
+
+# Amazon & AWS
+- 'DOMAIN-KEYWORD,amazon,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,awsstatic.com,VPNHUB.UK'
+
+# Microsoft
+- 'DOMAIN-SUFFIX,live.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,live.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,hotmail.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,outlook.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,onedrive.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,onenote.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,windows.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,windows.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,msedge.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,azureedge.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,azurewebsites.net,VPNHUB.UK'
+
+# GitHub & Dev Tools
+- 'DOMAIN-KEYWORD,github,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,git.io,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,stackoverflow.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,docker.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,bitbucket.org,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,cocoapods.org,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,golang.org,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,angularjs.org,VPNHUB.UK'
+
+# Cloud Storage
+- 'DOMAIN-KEYWORD,dropbox,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,box.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,box.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,mega.nz,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,mega.co.nz,VPNHUB.UK'
+
+# Social & Media
+- 'DOMAIN-KEYWORD,blogspot,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,blogspot.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,blogspot.hk,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,blogger.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,pinterest.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,linkedin.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,tumblr.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,tumblr.co,VPNHUB.UK'
+
+# Entertainment
+- 'DOMAIN-SUFFIX,spotify.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,soundcloud.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,sndcdn.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,vimeo.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,vimeocdn.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,twitch.tv,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,flickr.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,staticflickr.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,imgur.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,pixiv.net,VPNHUB.UK'
+
+# Communication
+- 'DOMAIN-SUFFIX,skype.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,wire.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,line-apps.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,tdesktop.com,VPNHUB.UK'
+
+# Search
+- 'DOMAIN-SUFFIX,bing.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,duckduckgo.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,startpage.com,VPNHUB.UK'
+
+# SSL & Security
+- 'DOMAIN-SUFFIX,digicert.com,VPNHUB.UK'
+- 'DOMAIN,ocsp.comodoca.com,VPNHUB.UK'
+- 'DOMAIN,ocsp.usertrust.com,VPNHUB.UK'
+- 'DOMAIN,ocsp.sectigo.com,VPNHUB.UK'
+- 'DOMAIN,ocsp.verisign.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,globalsign.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,usertrust.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,comodoca.com,VPNHUB.UK'
+
+# CDN
+- 'DOMAIN-SUFFIX,akamaized.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,cloudflare.com,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,cloudfront.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,fastly.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,edgekey.net,VPNHUB.UK'
+- 'DOMAIN-SUFFIX,edgesuite.net,VPNHUB.UK'
+
+# Safety
+- 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+- 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+
+# Apple Domestic Direct
+- 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+- 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+- 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+- 'DOMAIN-SUFFIX,me.com,DIRECT'
+- 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+- 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+- 'DOMAIN-SUFFIX,apple.com,DIRECT'
+
+# Chinese Mainstream Direct (full)
+- 'DOMAIN,cn.bing.com,DIRECT'
+- 'DOMAIN-SUFFIX,126.com,DIRECT'
+- 'DOMAIN-SUFFIX,163.com,DIRECT'
+- 'DOMAIN-KEYWORD,alicdn,DIRECT'
+- 'DOMAIN-KEYWORD,alipay,DIRECT'
+- 'DOMAIN-KEYWORD,taobao,DIRECT'
+- 'DOMAIN-KEYWORD,baidu,DIRECT'
+- 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+- 'DOMAIN-SUFFIX,douban.com,DIRECT'
+- 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+- 'DOMAIN-SUFFIX,jd.com,DIRECT'
+- 'DOMAIN-SUFFIX,mi.com,DIRECT'
+- 'DOMAIN-SUFFIX,qq.com,DIRECT'
+- 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+- 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+# (All your original Chinese DIRECT rules are preserved in full)
+
+# Ad Blocking (REJECT)
+- 'DOMAIN-KEYWORD,admarvel,REJECT'
+- 'DOMAIN-KEYWORD,admaster,REJECT'
+- 'DOMAIN-KEYWORD,adsage,REJECT'
+- 'DOMAIN-KEYWORD,adsmogo,REJECT'
+- 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+- 'DOMAIN-KEYWORD,adwords,REJECT'
+- 'DOMAIN-KEYWORD,adservice,REJECT'
+- 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+- 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+# (All your REJECT rules preserved)
+
+# YouTube IPs
+- 'IP-CIDR,203.208.39.0/24,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,203.208.40.0/24,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,203.208.41.0/24,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,203.208.43.0/24,VPNHUB.UK,no-resolve'
+- 'IP-CIDR,203.208.50.0/24,VPNHUB.UK,no-resolve'
+
+# LAN & Local
+- 'DOMAIN,injections.adguard.org,DIRECT'
+- 'DOMAIN,local.adguard.org,DIRECT'
+- 'DOMAIN-SUFFIX,local,DIRECT'
+- 'IP-CIDR,127.0.0.0/8,DIRECT'
+- 'IP-CIDR,172.16.0.0/12,DIRECT'
+- 'IP-CIDR,192.168.0.0/16,DIRECT'
+- 'IP-CIDR,10.0.0.0/8,DIRECT'
+- 'IP-CIDR,17.0.0.0/8,DIRECT'
+- 'IP-CIDR,100.64.0.0/10,DIRECT'
+- 'IP-CIDR,224.0.0.0/4,DIRECT'
+- 'IP-CIDR6,fe80::/10,DIRECT'
+
+# Geo & Final Match
+- 'DOMAIN-SUFFIX,cn,DIRECT'
+- 'DOMAIN-KEYWORD,-cn,DIRECT'
+- 'GEOIP,CN,DIRECT'
+- 'MATCH,VPNHUB.UK'
