@@ -1,1 +1,2 @@
-dmxlc3M6Ly80MWUyZmFlYi1jZTNmLTQ0NWItOGU1ZS1jNjQ0OTBiMTFhNTVAY2Z5ZXMubHh5MTAxNS50b3A6NDQzP2FsbG93X2luc2VjdXJlPTAmZnA9aW9zJmhvc3Q9Z2ItbHguNzc3MDc2Lnh5eiZwYXRoPSUyRmxpYW5neGluJTJGZ2IxJnF1aWNTZWN1cml0eT1ub25lJnNlY3VyaXR5PXRscyZzbmk9Z2ItbHguNzc3MDc2Lnh5eiZ0eXBlPXdzIyVGMCU5RiU4NyVBQyVGMCU5RiU4NyVBN1VL=
+hysteria2://41e2faeb-ce3f-445b-8e5e-c64490b11a55@62.164.143.251:60000?allow_insecure=1&allowInsecure=1&insecure=1&mport=60000-65530&sni=bilibili-gb.biliimg.com#%F0%9F%87%AC%F0%9F%87%A7UK1
+hysteria2://41e2faeb-ce3f-445b-8e5e-c64490b11a55@62.164.143.251:60000?allow_insecure=1&allowInsecure=1&insecure=1&mport=60000-65530&sni=bilibili-gb.biliimg.com#%F0%9F%87%AC%F0%9F%87%A7UK2
