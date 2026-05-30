@@ -391,7 +391,7 @@ proxy-groups:
     interval: 120
     tolerance: 10
     proxies:
-      - DIRECT
+     
 rules:
   - IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve
   - IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve
