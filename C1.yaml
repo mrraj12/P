@@ -40,437 +40,183 @@ dns:
       - +.facebook.com
       - +.youtube.com
 proxies:
-  - name: 🇯🇵JP1
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: jp-lx.777076.xyz
-    tls: true
-    client-fingerprint: safari
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: jp-lx.777076.xyz
-    udp: true
-  - name: 🇯🇵JP2
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: jp2-lx.777076.xyz
-    tls: true
-    client-fingerprint: safari
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: jp2-lx.777076.xyz
-    udp: true
-  - name: 🇸🇬SG1
-    type: vless
-    server: aws-link7.liangxin1.xyz
-    port: 48574
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: www.lamer.com.sg
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc
-      short-id: f8f18902
-    udp: true
-  - name: 🇸🇬SG2
-    type: vless
-    server: aws-link8.liangxin1.xyz
-    port: 39645
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: iosapps.itunes.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ
-      short-id: 2b3b0b93
-    udp: true
-  - name: 🇸🇬SG3
-    type: vless
-    server: aws-link9.liangxin1.xyz
-    port: 23587
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: iosapps.itunes.apple.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA
-      short-id: 19b580ae
-    udp: true
-  - name: 🇸🇬SG4
-    type: vless
-    server: aws-link30.liangxin1.xyz
-    port: 23568
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: www.lamer.com.hk
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY
-      short-id: 55d046dc
-    udp: true
-  - name: 🇸🇬SG5
-    type: vless
-    server: aws-link31.liangxin1.xyz
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE
-      short-id: c7487aeb
-    udp: true
-  - name: 🇸🇬SG6
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lx-1sg.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/sg1
-      headers:
-        Host: lx-1sg.lxy1015.top
-    udp: true
-  - name: 🇸🇬SG7
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lx-1sg.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/sg1
-      headers:
-        Host: lx-1sg.lxy1015.top
-    udp: true
-  - name: 🇸🇬SG8
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lx-1sg.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/sg1
-      headers:
-        Host: lx-1sg.lxy1015.top
-    udp: true
-  - name: 🇯🇵JP3
-    type: vless
-    server: aws-link13.liangxin1.xyz
-    port: 36574
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: www.apple.com.cn
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols
-      short-id: 32a3650d
-    udp: true
-  - name: 🇯🇵JP4
-    type: vless
-    server: aws-link14.liangxin1.xyz
-    port: 25485
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: www.apple.com.cn
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg
-      short-id: 9c5b8c53
-    udp: true
-  - name: 🇯🇵JP5
-    type: vless
-    server: aws-link19.liangxin1.xyz
-    port: 8654
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o
-      short-id: "6314e825"
-    udp: true
-  - name: 🇯🇵JP6
-    type: vless
-    server: aws-link20.liangxin1.xyz
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-    reality-opts:
-      public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o
-      short-id: "6314e825"
-    udp: true
-  - name: 🇯🇵JP7
-    type: vless
-    server: aws-link23.liangxin1.xyz
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: download-porter.hoyoverse.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: safari
-    reality-opts:
-      public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c
-      short-id: ba826a54
-    udp: true
-  - name: 🇯🇵JP8
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lxs1jp.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: lx-1jp.lxy1015.top
-    udp: true
-  - name: 🇯🇵JP9
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lxs1jp.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: lx-1jp.lxy1015.top
-    udp: true
-  - name: 🇯🇵JP10
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lxs2jp.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: lx-2jp.lxy1015.top
-    udp: true
-  - name: 🇯🇵JP11
-    type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lxs2jp.lxy1015.top
-    tls: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/jp1
-      headers:
-        Host: lx-2jp.lxy1015.top
-    udp: true
   - name: 🇺🇸US1
     type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: lx-us1.lxy1015.top
+    server: us.vpnhub.uk
+    port: 8446
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    servername: us.vpnhub.uk
     tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
-    ws-opts:
-      path: /liangxin/us
-      headers:
-        Host: lx-us1.lxy1015.top
+    skip-cert-verify: true
     udp: true
   - name: 🇺🇸US2
     type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
+    server: us.vpnhub.uk
+    port: 61002
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    servername: www.amazon.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: K4WF5hF039b6ba_jv74YZjSxseqqyHK0KcEg1CjX7RA
+      short-id: feab54
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸US4
+    type: vless
+    server: us.vpnhub.uk
+    port: 19628
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
     network: ws
-    servername: lx-us1.lxy1015.top
+    servername: us.vpnhub.uk
     tls: true
     client-fingerprint: chrome
     ws-opts:
-      path: /liangxin/us
+      path: /
       headers:
-        Host: lx-us1.lxy1015.top
+        Host: us.vpnhub.uk
+    skip-cert-verify: true
     udp: true
-  - name: 🇬🇧UK1
+  - name: 🇭🇰HK1
     type: vless
-    server: cfyes.lxy1015.top
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    network: ws
-    servername: gb-lx.777076.xyz
-    tls: true
-    client-fingerprint: ios
-    ws-opts:
-      path: /liangxin/gb1
-      headers:
-        Host: gb-lx.777076.xyz
-    udp: true
-  - name: 🇰🇷KR1
-    type: vless
-    server: aws-link27.liangxin1.xyz
-    port: 443
-    uuid: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    servername: download-porter.hoyoverse.com
+    server: hk.vpnhub.uk
+    port: 8447
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    servername: hk.vpnhub.uk
     tls: true
     flow: xtls-rprx-vision
-    client-fingerprint: safari
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰HK2
+    type: vless
+    server: hk.vpnhub.uk
+    port: 5346
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    servername: www.amazon.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
     reality-opts:
-      public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg
-      short-id: a8609be8
-    udp: true
-  - name: 🇸🇬SG9
-    type: hysteria2
-    server: aws-linkhy9.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: iosapps.itunes.apple.com
+      public-key: H22qIP6Rczq-3vVvi14tSwTIA4MSkf_cdXA2dU8VrUw
+      short-id: b1f97e5f61
     skip-cert-verify: true
     udp: true
-  - name: 🇸🇬SG10
-    type: hysteria2
-    server: aws-linkhy10.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: iosapps.itunes.apple.com
+  - name: 🇭🇰HK3
+    type: vless
+    server: hk.vpnhub.uk
+    port: 28629
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    network: ws
+    tls: false
+    ws-opts:
+      path: /sgws
+      headers:
+        Host: cdn.vpnhub.click
     skip-cert-verify: true
     udp: true
-  - name: 🇸🇬SG11
-    type: hysteria2
-    server: aws-linkhy11.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: iosapps.itunes.apple.com
+  - name: 🇭🇰HK4
+    type: ss
+    server: hk.vpnhub.uk
+    port: 16189
+    cipher: aes-256-gcm
+    password: 5bhilfw7fz2eon2n
     skip-cert-verify: true
     udp: true
-  - name: 🇸🇬SG12
+  - name: 🇭🇰HK5
     type: hysteria2
-    server: aws-linkhy12.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: iosapps.itunes.apple.com
+    server: hk.vpnhub.uk
+    port: 55205
+    password: 6q22nwmz4doeqrha
+    sni: hk.vpnhub.uk
+    skip-cert-verify: true
+    alpn:
+      - h3
+    obfs: salamander
+    obfs-password: 40ml8phbttzcpxp1
+    udp: true
+  - name: 🇸🇬SG1
+    type: vless
+    server: sg.vpnhub.uk
+    port: 2084
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    tls: true
+    client-fingerprint: chrome
     skip-cert-verify: true
     udp: true
-  - name: 🇯🇵JP12
-    type: hysteria2
-    server: aws-linkhy15.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-jp.biliimg.com
+  - name: 🇸🇬SG2
+    type: vless
+    server: sg.vpnhub.uk
+    port: 2053
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    servername: www.bing.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: kq-WEN6WnD5M8SzhFS_OnKKnTk9pqasymgj5hiKlciM
+      short-id: feeb94b50a
     skip-cert-verify: true
     udp: true
-  - name: 🇯🇵JP13
-    type: hysteria2
-    server: aws-linkhy16.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-jp2.biliimg.com
+  - name: 🇸🇬SG3
+    type: vless
+    server: sg.vpnhub.uk
+    port: 31523
+    uuid: a8d1322a-e034-4539-a5ef-a7e4d42c3aec
+    network: ws
+    servername: sg.vpnhub.uk
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sg.vpnhub.uk
     skip-cert-verify: true
     udp: true
-  - name: 🇯🇵JP14
-    type: hysteria2
-    server: aws-linkhy17.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-jp3.biliimg.com
+  - name: 🇸🇬SG4
+    type: ss
+    server: sg.vpnhub.uk
+    port: 33915
+    cipher: aes-256-gcm
+    password: 5bhilfw7fz2eon2n
     skip-cert-verify: true
     udp: true
-  - name: 🇯🇵JP15
+  - name: 🇸🇬SG5
     type: hysteria2
-    server: aws-linkhy18.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-jp4.biliimg.com
+    server: sg.vpnhub.uk
+    port: 43053
+    password: 6q22nwmz4doeqrha
+    sni: sg.vpnhub.uk
     skip-cert-verify: true
-    udp: true
-  - name: 🇰🇷KR2
-    type: hysteria2
-    server: aws-linkhy21.liangxin1.xyz
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-kr.biliimg.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧UK2
-    type: hysteria2
-    server: 62.164.143.251
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-gb.biliimg.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇬🇧UK3
-    type: hysteria2
-    server: 62.164.143.251
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: bilibili-gb.biliimg.com
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸US3 V1
-    type: hysteria2
-    server: 203.10.97.121
-    port: 60000
-    password: 41e2faeb-ce3f-445b-8e5e-c64490b11a55
-    sni: www.apple.com
-    skip-cert-verify: true
+    alpn:
+      - h3
+    obfs: salamander
+    obfs-password: o0kr0a8711t5gb25
     udp: true
 proxy-groups:
   - name: VPNHUB.UK
     type: select
     proxies:
       - Ai Auto Select
-
       - 🇺🇸US1
       - 🇺🇸US2
-      - 🇬🇧UK1
-
-
-
-      - 🇬🇧UK2
-      - 🇬🇧UK3
-      - 🇺🇸US3 V1
+      - 🇺🇸US4
+      - 🇭🇰HK1
+      - 🇭🇰HK2
+      - 🇭🇰HK3
+      - 🇭🇰HK4
+      - 🇭🇰HK5
   - name: Ai Auto Select
     type: url-test
     include-all: true
-    filter: (?i)(SG|JP|KR)
+    filter: (?i)(SG|JP|HK)
     url: http://www.gstatic.com/generate_204
     interval: 120
     tolerance: 10
-
-      
+    proxies:
+   
 rules:
   - IP-CIDR,1.1.1.1/32,VPNHUB.UK,no-resolve
   - IP-CIDR,8.8.8.8/32,VPNHUB.UK,no-resolve
